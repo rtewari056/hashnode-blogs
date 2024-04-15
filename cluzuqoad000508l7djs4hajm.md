@@ -105,7 +105,7 @@ Let's walk through the execution process of the bash script:
 
 1. Open [https://github.com/new](https://github.com/new) in the browser and create a new repository.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713099462131/5a12805e-ee58-44dd-942c-1f92f37a1d6d.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713099462131/5a12805e-ee58-44dd-942c-1f92f37a1d6d.png)
     
 2. Save the provided bash script as `auto-upload.sh` within the root directory of your projects and change the value of the variables with actual values.
     
@@ -116,13 +116,13 @@ Let's walk through the execution process of the bash script:
     
 3. Now run the bash script using your preferred terminal of choice.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713117022036/8f213dd9-99b8-4400-8641-3203c78bb7b7.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713117022036/8f213dd9-99b8-4400-8641-3203c78bb7b7.png)
     
-4. As you can see the projects uploaded to the GitHub repository.
+4. As you can see the projects were uploaded to the GitHub repository.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713117257167/5a0d1c08-3755-411f-8f57-5c30c7742459.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713117257167/5a0d1c08-3755-411f-8f57-5c30c7742459.png)
     
-    That’s all! Now we have a script that is capable of uploading single/multiple projects to GitHub in a dedicated branch.
+    That’s all! Now we have a script capable of uploading single/multiple projects to GitHub in a dedicated branch.
     
 
 ### Conclusion:
