@@ -20,7 +20,7 @@ Begin by creating a new repository on GitHub to host your application. Follow th
 
 In this case, I created one as shown below :
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713627649854/451f39b7-a655-41bf-a34e-44042b704073.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713627649854/451f39b7-a655-41bf-a34e-44042b704073.png)
 
 ### Step 2 - Create & Configure A New DigitalOcean Server
 
@@ -28,7 +28,7 @@ Before proceeding further, set up a Virtual Private Server (VPS) on DigitalOcean
 
 To create a new droplet on DigitalOcean check out [this](https://github.com/rtewari056/digitalocean-deployment#step-1---create--configure-a-new-digitalocean-server) tutorial.
 
-### Step 3 - Set up the Nginx, Node.js and PM2
+### Step 3 - Set up the Nginx, Node.js, and PM2
 
 Configure Nginx, Node.js, and PM2 for your MERN project using the following guides:
 
@@ -49,11 +49,11 @@ We will use the self-hosted runner option in the deployment workflow for deploym
 
 Go to the `Settings` &gt; `Actions` &gt; `Runners` section of the GitHub repository, then click the `New self-hosted runner` button.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713627802033/a7ed5130-c9b8-4d00-8bbc-fe9f04c84627.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713627802033/a7ed5130-c9b8-4d00-8bbc-fe9f04c84627.png)
 
 Since we have `Ubuntu` installed on the Droplet, select `Linux` as the runner image and `x64` as the architecture.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713627852111/687f0523-b62c-4abd-adaf-18d4de5f5c86.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713627852111/687f0523-b62c-4abd-adaf-18d4de5f5c86.png)
 
 To integrate the `self-hosted` runner into your `Ubuntu` server, log in to your VPS via the terminal, and follow the `Download` and `Configure` instructions provided in your `Settings` &gt; `Actions` &gt; `Runners` page.
 
@@ -107,13 +107,13 @@ rohit@hostname:~$ ./config.sh --url https://github.com/GITHUB_USERNAME/GITHUB_RE
 
 You will be asked to enter some information to register your `self-hosted` runner with GitHub Actions.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713627995805/8cde7afd-9aeb-45eb-aa0a-abdd63a9d8e8.png align="left")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713627995805/8cde7afd-9aeb-45eb-aa0a-abdd63a9d8e8.png)
 
 Now go to the `Settings` &gt; `Actions` &gt; `Runners` section of your project repository.
 
 If your `self-hosted` runner successfully registered, you will see your runner is currently offline.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713628027436/89c60717-96c3-4387-a4c4-d3dc5ab3197b.png align="left")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713628027436/89c60717-96c3-4387-a4c4-d3dc5ab3197b.png)
 
 Start the runner as a service:
 
@@ -124,7 +124,7 @@ rohit@hostname:~$ sudo ./svc.sh start
 
 If you go to the `Settings` &gt; `Actions` &gt; `Runners` section of your project repository, you will see that `self-hosted` runner is now successfully started.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713628054604/2e0f3f77-c650-4705-8db9-24c060a39054.png align="left")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713628054604/2e0f3f77-c650-4705-8db9-24c060a39054.png)
 
 ### Configuring Nginx to display our project
 
@@ -273,11 +273,11 @@ If you are using `.env` file to use environment variables inside your project, y
 
 To define secrets, go to `Settings` &gt; `Secrets` &gt; `Actions` and click on `New repository secret` button. Then add your environment variable name and value inside the textarea.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713628133204/a1ca63a8-c391-4a14-b766-3423e9b886b0.png align="left")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713628133204/a1ca63a8-c391-4a14-b766-3423e9b886b0.png)
 
 After adding the secrets it will look like this:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713628148302/618ebdf8-3f36-4158-b09f-da1fe5d4ef20.png align="left")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1713628148302/618ebdf8-3f36-4158-b09f-da1fe5d4ef20.png)
 
 Along with that, we will also create a configuration file named `ecosystem.config.js` in our project root directory for `PM2` so we can easily `start/stop/restart` our `node js` application whenever we push changes to GitHub. You can name it anything but make sure it ends with `.config.js` so `PM2` can recognize it as a configuration file.
 
