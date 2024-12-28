@@ -1,6 +1,6 @@
 ---
 title: "Managing Multiple GitHub Accounts on One Computer: A Step-by-Step Guide"
-seoTitle: "Easily Manage Multiple GitHub Accounts"
+seoTitle: "Easily Manage Multiple GitHub Accounts on One Machine"
 seoDescription: "Easily manage multiple GitHub accounts on one computer by setting up SSH keys and configuring your system with this step-by-step guide"
 datePublished: Sat Dec 28 2024 16:18:15 GMT+0000 (Coordinated Universal Time)
 cuid: cm58dyhgv000509lebgpidico
